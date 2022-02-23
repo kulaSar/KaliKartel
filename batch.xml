@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test thread-count="5" name="KaliKartel">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.google.com/"/>
+        <classes>
+            <class name="com.KK.testScripts.TestHarness"/>
+        </classes>
+    </test> <!-- KaliKartel -->
+</suite> <!-- Default Suite -->
