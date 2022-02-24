@@ -52,8 +52,8 @@ public class BaseLibrary {
             sl.takeScreenshot(methodName);
             Reporter.log("Screenshot has been taken ... ",true);
         }
-        //driver.close();
-        //Reporter.log("browser closed .. ",true);
+        driver.close();
+        Reporter.log("browser closed .. ",true);
     }
 
 }
