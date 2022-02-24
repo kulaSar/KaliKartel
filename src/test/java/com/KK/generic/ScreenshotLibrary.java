@@ -19,10 +19,12 @@ public class ScreenshotLibrary {
     public void takeScreenshot(String methodname){
         TakesScreenshot ts= (TakesScreenshot)driver;
         File src= ts.getScreenshotAs(OutputType.FILE);
-                File dest= new File("/KaliKartel/screenshots/"+methodname+".png");
+                File dest= new File("C:/Users/91863/Desktop/KaliKartel/screenshots/"+methodname+".png");
+
         try {
             FileUtils.copyFile(src,dest);
         }catch (IOException e){
+            System.out.println("Unable to take screen shot");
             e.printStackTrace();
         }
     }
